@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Time Unicode Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body onLoad="javascript:txtBox.box1.focus()">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center position-relative">
+                <h2 class="mb-5">Realtime Unicode Converter</h2>
+                <h4>Unicode (<span style="font-family: Potha;">යුනිකෝඩ්</span>)</h4>
+                <form name="txtBox">
+                    <div class="position-relative mb-3">
+                        <textarea class="form-control text-center" style="font-size: 14pt; font-family: Potha;"
+                            onKeyUp="startText();" onClick="startText();" name="box1" rows="7"></textarea>
+                        <i class=" fa-regular fa-clone clipboard-icon" onclick="copyText('box1', this)"></i>
+                        <span class="copied-text" style="display: none;">Copied to clipboard&#33;</span>
+                    </div>
+                    <div class="mb-3">
+                        <input type="reset" class="btn btn-outline-secondary" value="Reset">
+                    </div>
+                    <h4>DL-Manel-bold. (<span style="font-family: DL-Manel-bold;">ã t,a udfk,a fnda,aâ</span>)</h4>
+                    <div class="position-relative mb-3">
+                        <textarea class="form-control text-center" style="font-size: 14pt; font-family: DL-Manel-bold;"
+                            name="box2" rows="7"></textarea>
+                        <i class="fa-regular fa-clone clipboard-icon" onclick="copyText('box2', this)"></i>
+                        <span class="copied-text" style="display: none;">Copied to clipboard&#33; </span>
+                    </div>
+                </form>
+                <div class="text-start">
+                    <p>Copy the text above and paste it in Word, Photoshop, Illustrator etc. or anywhere you want to
+                        type Sinhala.
+                    </p>
+                    <p>Download Sinhala fonts from the links below:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-8 col-8">
+                                    DL-Manel
+                                </div>
+                                <div class="col-md-4 col-4 text-md-end">
+                                    <i class="fa-solid fa-arrow-down-to-line"></i>
+                                    <a href="public/downloads/DL_Manel_fonts_pack.rar">
+                                        <i class="fa fa-download" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Click to download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-8 col-8">
+                                    Noto Sans Sinhala (Google Fonts)
+                                </div>
+                                <div class="col-md-4 col-4 text-md-end">
+                                    <i class="fa-solid fa-arrow-down-to-line"></i>
+                                    <a href="public/downloads/Noto_Sans_Sinhala_Varela_Round.zip">
+                                        <i class="fa fa-download" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Click to download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-8 col-8">
+                                    Sinhala Apex Font Pack (50 fonts)
+                                </div>
+                                <div class="col-md-4 col-4 text-md-end">
+                                    <i class="fa-solid fa-arrow-down-to-line"></i>
+                                    <a href="public/downloads/Sinhala_apex_fonts_pack.rar">
+                                        <i class="fa fa-download" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Click to download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="mt-5 mb-4">
+                    <span class="d-block">Developed by <a href="https://lakinduk.me">lakinduk.me</a> |
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/copy.js"></script>
+</body>
+
+</html>
