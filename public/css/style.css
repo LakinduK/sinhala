@@ -22,3 +22,9 @@
   color: green;
   font-size: 0.8rem;
 }
+
+.nav-link.active {
+  background-color: #47627e !important; /* Change this color as needed */
+  color: white !important; /* Ensure the text is readable */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
